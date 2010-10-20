@@ -1,3 +1,14 @@
+window.onerror = function(msg, url, line){
+	if(onerror.num++ < onerror.max){
+		alert("ERROR:" + msg + "\n" + url + ":" + line);
+		return true;
+	}
+}
+
+onerror.max = 3;
+onerror.num = 0;
+
+
 var bounce = {
 	x:0, y:0, // ウィンドウ座標
 
