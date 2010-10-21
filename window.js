@@ -8,7 +8,6 @@ window.onerror = function(msg, url, line){
 onerror.max = 3;
 onerror.num = 0;
 
-
 var bounce = {
 	x:0, y:0, // ウィンドウ座標
 
@@ -76,10 +75,10 @@ var bounce = {
 		bounce.win.moveTo(bounce.x, bounce.y);
 
 		// ステータス行に現在位置を表示する
-		bounce.win.defaultStatus = '(' + bounce.x + ',' + bounce.y + ')';
+		//bounce.win.defaultStatus = '(' + bounce.x + ',' + bounce.y + ')';
 
-		// 表示されないので、documentに
-		//bounce.win.document.write("bounce.x" + bounce.x + ", bounce.y" + bounce.y);
+		// ステータス行に表示されないので、documentに
+		bounce.win.document.write("bounce.x" + bounce.x + ", bounce.y" + bounce.y);
 
 	}
 }
