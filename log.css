@@ -1,0 +1,20 @@
+@charset "Shift_JIS";
+
+#debug_log{
+	background-color: #aaa;
+	border: solid black 2px;
+	overflow:auto;
+	width: 75%;
+	height: 300px;
+}
+
+#debug_log:before{
+	content: "Debugging Message";
+	display: block;
+	text-align: center;
+	font: bold 18pt sans-serif;
+}
+
+.debug_message{
+	border-bottom: solid black 1px;
+}

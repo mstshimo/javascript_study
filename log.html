@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="log.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="log.css" />
+</head>
+<body>
+<script>
+function makeRectangle(x, y, w, h){
+	log.debug("entering makeRectangle"); //メッセージを記録する
+	var r = {x:x, y:y, size:{ w:w, h:h}};
+	log.debug("New rectabgle", r); //オブジェクトを記録
+	log.debug("exiting makeRectangle"); //別のメッセージを記録する
+	return r;
+}
+alert("test");
+</script>
+
+<button onclick="makeRectangle(1, 2, 3, 4);">Make Rectangle</button>
+
+<div id="debug_log" class="log"></div>
+
+</body>
+</html>
