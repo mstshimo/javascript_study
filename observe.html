@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>test</title>
+<script type="text/javascript">
+	function hoge(){
+		document.getElementById("L3").addEventListener("click", function(e){alert("L3 capture");}, true);
+		document.getElementById("L2").addEventListener("click", function(e){alert("L2 capture");}, true);	
+		document.getElementById("L1").addEventListener("click", function(e){alert("L1 capture");}, true);
+		document.getElementById("L3").addEventListener("click", function(e){alert("L3 bubble");}, false);
+		document.getElementById("L2").addEventListener("click", function(e){alert("L2 bubble");}, false);
+		document.getElementById("L1").addEventListener("click", function(e){alert("L1 bubble");}, false);
+	}
+</script>
+
+</head>
+<body onload="hoge(); return false;">
+
+<div id="L1">
+<div id="L2">
+<div id="L3">
+<p>‚±‚±‚ðƒNƒŠƒbƒN</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
