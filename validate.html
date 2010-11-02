@@ -1,0 +1,18 @@
+<html>
+<head>
+<script src="validate.js" type="text/javascript"></script>
+<style>
+input.invalid{background: #faa; }
+input.valid{backgroun: #afa; ]
+</style>
+<head>
+<body>
+<form>
+Name:<input type="text" name="name" reqired><br>
+email:<input type="text" name="email" pattern="^\s*\w+@\w+\.\w+s*$"><br>
+zipcode:<input type="text" name="zip" pattern="^\s*\d{5}\s*$"><br>
+unvalidated:<input type="text"><br>
+<input type="submit">
+</body>
+</html>
+
